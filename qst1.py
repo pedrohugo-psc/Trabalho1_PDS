@@ -63,8 +63,6 @@ plt.plot(t_2,x)
 fft_transformada = np.fft.fft(x)
 freq = np.fft.fftfreq(len(fft_transformada),ps_2)
 
-fft_mag = 2*np.abs(fft_transformada/len(n_2))
-
 plt.figure(6)
 plt.title("Sinal da Transfomada de Fourier de x[n] II")
 plt.ylabel("Magnitude")
